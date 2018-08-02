@@ -12,24 +12,24 @@ import java.io.*;
  * @author Tarishaulia
  */
 public class Persegi {
-  public static void main(String[]args){
+ public static void main(String[]args){
       BufferedReader data = new BufferedReader(new InputStreamReader(System.in));
       String x = " ";
-      int hitungluas = 0;
+   int Luas =0;
       System.out.println("---Luas Persegi");
       System.out.print("Masukkan nilai sisi : ");
       
     try {
             x = data.readLine();
             int angka = Integer.parseInt(x);
-          int hitungLuas = angka * angka;
+          Luas = angka * angka;
+          
     }catch (IOException | NumberFormatException e) {
         System.out.println("Error");
     }
-      int sisi = 0;
-      int hitungLuas = sisi*sisi*sisi;
-        System.out.println("Luas persegi dengan sisi " + x + " adalah " + hitungLuas);
-        
+    System.out.println("hasil luas adalah"+Luas);
+  }
+      
       
       
    
@@ -39,6 +39,3 @@ public class Persegi {
       
   }
       
-      
-  }  
-
